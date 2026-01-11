@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>musieix.app — Вітаємо</title>
+  <meta name="description" content="Вітаємо в musieix.app — музичний простір онлайн." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="/">musieix.app</a>
+      <nav class="nav" aria-label="Головне меню">
+        <a href="#about">Про нас</a>
+        <a href="#features">Функції</a>
+        <a href="#contact">Контакт</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="hero" role="main">
+    <div class="container hero-inner">
+      <h1 class="hero-title">Вітаємо в musieix.app</h1>
+      <p class="hero-sub">
+        Ласкаво просимо до вашого музичного простору онлайн — тут народжуються ідеї та звучання.
+      </p>
+      <p class="hero-ctas">
+        <a class="btn primary" href="#features">Дізнатися більше</a>
+        <a class="btn ghost" href="#contact">Зв'язатися</a>
+      </p>
+    </div>
+  </main>
+
+  <section id="about" class="section light">
+    <div class="container">
+      <h2>Про проєкт</h2>
+      <p>Musieix — простий та зручний інтерфейс для демонстрації музики, подій та новин.</p>
+    </div>
+  </section>
+
+  <section id="features" class="section">
+    <div class="container">
+      <h2>Функції</h2>
+      <ul class="features">
+        <li>Плейлист та демо-треки</li>
+        <li>Анонси подій</li>
+        <li>Контактна форма для артистів</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer id="contact" class="site-footer light">
+    <div class="container">
+      <p>Контакт: <a href="mailto:hello@musieix.app">hello@musieix.app</a></p>
+      <p class="muted">© <span id="year"></span> musieix.app — Усі права захищені</p>
+    </div>
+  </footer>
+
+  <script>
+    // Підставляємо поточний рік у футері
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+  </html>
